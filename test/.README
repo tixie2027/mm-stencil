@@ -1,1 +1,9 @@
 Adding test/ to git path
+
+Run this in test folder:
+
+gcc -g -I.. -I../include buddy_test.c \
+  ../src/buddy_allocator.c ../sys/mem/mem.c \
+  -o ../bin/buddy_test
+
+../bin/buddy_test

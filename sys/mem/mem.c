@@ -4,6 +4,8 @@
 #include <stdlib.h> // for malloc
 #include <stdio.h>  // for fprintf
 
+long mem_size;
+
 int mem_init()
 {
     // find memory size in config file
@@ -34,5 +36,7 @@ int mem_init()
         return -1;
     }
 
+    mem_size = size;
+    
     return 0;
 }
